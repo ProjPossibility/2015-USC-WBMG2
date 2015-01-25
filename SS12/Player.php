@@ -158,7 +158,7 @@ class Player {
             $last_room=  $this->connection->insert_id;
             $this->Room=$last_room;
             $this->Status=1;
-            $sql="UPDATE Player SET Room=".$last_room.",Score=0,Status=1 WHERE PlayerID='".$name."'";
+            $sql="UPDATE Player SET Room=".$last_room.",Status=1 WHERE PlayerID='".$name."'";
     
             $this->connection->query($sql);
             $this->connection->commit();
