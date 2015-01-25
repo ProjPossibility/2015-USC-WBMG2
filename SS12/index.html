@@ -31,9 +31,9 @@
             var start_typing_time = 0;
 
             // Game Setting Parameters ========================
-            var game_rounds = 2;
-            var song_len = 5;
-            var max_response_time_interval  = 2;
+            var game_rounds = 3;
+            var song_len = 6;
+            var max_response_time_interval  = 3;
             var max_response_time_total     = game_rounds * max_response_time_interval;
             // ================================================
 
@@ -325,6 +325,7 @@
                             }else{
                                 // other_opponet_finished = response;
                                 $("#instruction13").fadeIn();
+
                                 if(response==0){
                                     $("#draw").trigger("play");
                                     document.getElementById("draw").addEventListener('ended',function(){
@@ -332,6 +333,7 @@
                                         restart_ring.play();
                                         restart_ring.addEventListener('ended',function(){
                                             time_status = 3;//2 time_status start matching
+                                            $("body").focus();
                                         });
                                     });
                                 }else if(response<0){
@@ -341,6 +343,7 @@
                                         restart_ring.play();
                                         restart_ring.addEventListener('ended',function(){
                                             time_status = 3;//2 time_status start matching
+                                            $("body").focus();
                                         });
                                     });
                                 }else{
@@ -350,6 +353,7 @@
                                         restart_ring.play();
                                         restart_ring.addEventListener('ended',function(){
                                             time_status = 3;//2 time_status start matching
+                                            $("body").focus();
                                         });
                                     });
                                 }
@@ -375,8 +379,6 @@
                 //Fetch game result from server =============
                 // $("#notice").html("Fetching Game Result...");
                 Report_Result();
-                
-	            
             }
 
 
@@ -559,7 +561,7 @@
 					Matching...
 				</span>
 
-				<input id="input" name="imitation"  type="text"></input>
+				<input id="input" name="imitation"  type="text">
 
 				
 				<!-- <div id="fcircle" class="circle"></div>

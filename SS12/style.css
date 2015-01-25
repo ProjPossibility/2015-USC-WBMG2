@@ -1,5 +1,6 @@
 body{
 	background-image: url("images/bg3.jpg");
+	background-size: 100% 100%;
 	background-position: center 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -106,10 +107,16 @@ input:focus{
 	top: 35%;
 }
 
-#fcolor{
-	display: inline;
+.circle{
+	border-radius: 50%;
+	width: 100px;
+	height: 100px; 
+}
+
+#fcircle{
+	/*display: inline;*/
 	opacity: 0.6;
-	background-color: pink;
+	background-color: red;
 	width: 250px;
 	height: 250px;
 	position: relative;
@@ -117,10 +124,10 @@ input:focus{
 	left: 10%;
 }
 
-#jcolor{
-	display: inline;
+#jcircle{
+	/*display: inline;*/
 	opacity: 0.6;
-	background-color: purple;
+	background-color: green;
 	width: 250px;
 	height: 250px;
 	position: relative;

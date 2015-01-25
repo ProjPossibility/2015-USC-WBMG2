@@ -39,6 +39,8 @@ function win(Player $player)
         $player->connect();
         $player->quit();
         $player->close();
+        $_SESSION['player']=$player;
+        
     }
 }
 

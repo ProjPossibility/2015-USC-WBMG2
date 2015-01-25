@@ -84,10 +84,8 @@ class Player {
         $sql="UPDATE Player SET Room=0,Pair='#' WHERE PlayerID='".$this->P_id."'";
         $this->connection->query($sql);
         $this->Room=0;
-        $this->Status=0;
-        $this->Score=0;
-        $this->Pair="#";
         $this->connection->commit();
+        return $this;
     }
     
     public function wait_after_game()
@@ -119,6 +117,10 @@ class Player {
         $row = mysqli_fetch_array($result);
         if($row[0]==2)
         {
+            $sql="SELECT PlayerID FROM Player WHERE Pair='".$this->P_id."'";
+            $result=  $this->connection->query($sql);
+            $row=mysqli_fetch_array($result);
+            $this->Pair=$row[0];
             return true;
         }
         else
