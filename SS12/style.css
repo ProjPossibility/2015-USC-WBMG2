@@ -1,0 +1,144 @@
+body{
+	background-image: url("images/bg3.jpg");
+	background-position: center 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+input[type=text]{
+	background-color: transparent;
+	border:0px;
+	color: #FFFFFF;
+	font-size: 15px;
+}
+
+input:focus{
+	outline: 0px !important;
+}
+#nav{
+	width: 100%;
+}
+.navi{
+	opacity: 0.34;
+	height: 70px;
+	background-color: black;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.navi+span{
+	color: white;
+	font-family: Helvetica Neue;
+	font-weight: lighter;
+	font-size: 30px;
+	position: relative;
+	top: -50px;
+	left: 15px;
+}
+
+.row-m{
+	width: 100%;
+}
+
+.mask{
+	position: relative;
+	top: 370px;
+	left: 7%;
+	width:100%;
+	height: 200px;
+	opacity: 0.8;
+	background-color: black;
+	color: white;
+	text-align: left;
+	padding: 0px;
+}
+
+.mask h1{
+	font-family: Helvetica Neue;
+	font-weight: lighter;
+	font-size: 80px;
+	width: inherit;
+	color: white;
+}
+
+.mask h4 {	
+	font-family: Helvetica Neue;
+	font-weight: lighter;
+}
+
+.tutorial{
+	background-color: white;
+	opacity: 0.34;
+	width: 60%;
+	height: 450px;
+	position: fixed;
+	/*top: 30px;*/
+	left: 20%;
+	text-align: center;
+	padding-top: auto;
+	padding-bottom: auto;
+	vertical-align: center;
+}
+
+.tutorial input{
+	width: 700px;
+	height: 60px;
+
+	position: relative;
+	top: 35%;
+
+	clear: left;
+	text-align: center;
+	background-color:transparent;
+
+	font-family: Helvetica Neue;
+	font-weight: 10px;
+	font-size: 30px;
+	color: transparent;
+}
+
+.tutorial span{
+	font-family: Helvetica Neue;
+	font-weight: 7px;
+	font-size: 20px;
+	color: black;
+	position: relative;
+	top: 35%;
+}
+
+#fcolor{
+	display: inline;
+	opacity: 0.6;
+	background-color: pink;
+	width: 250px;
+	height: 250px;
+	position: relative;
+	top:55%;
+	left: 10%;
+}
+
+#jcolor{
+	display: inline;
+	opacity: 0.6;
+	background-color: purple;
+	width: 250px;
+	height: 250px;
+	position: relative;
+	top: 55%;
+	right: 10%;
+}
+
+.matching{
+	font-family: Helvetica Neue;
+	font-weight: 10px;
+	font-size: 30px;
+	color: black;
+	position: relative;
+	top: 35%;
+}
+
+.copyright{
+	color: white;
+	position: fixed;
+	bottom: 10px;
+}
